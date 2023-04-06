@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFC0C0C0">
+
+    <TextView
+        android:textSize="20sp"
+        android:text="Linear Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00FF00"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:src="@drawable/salma"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Selamat"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Belajar Pemrograman Bergerak"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <!-- Relative Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF666699">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="#FFFFFFFF"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praktikum"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemrograman"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bergerak"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <!-- Frame Layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF909090"
+            android:gravity="center"
+            android:text="Frame Layout"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/salma"
+            android:layout_gravity="top|left"
+            android:layout_margin="40dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/salma"
+            android:layout_gravity="center"
+            android:layout_margin="40dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/salma"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="40dp" />
+
+    </FrameLayout>
+
+    <!-- Table Layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF909090"/>
+
+        <TextView
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="Table Layout"
+            android:textSize="24sp" />
+
+
+        <TableRow
+            android:background="#22ff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Nama"
+                android:layout_column="1"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="NIM"
+                android:layout_column="2"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="Alamat"
+                android:layout_column="3"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+        <TableRow
+            android:background="#22ff">
+
+            <TextView
+                android:text="Nina Yusnia"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="210441100036"
+                android:layout_column="2"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="Jombang"
+                android:layout_column="3"
+                android:layout_gravity="center"/>
+
+        </TableRow >
+
+    </TableLayout>
+</LinearLayout>
